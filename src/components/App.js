@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/App.css';
 import { UserProfile } from './UserProfile';
 
-export const UserContext = React.createContext();
+export const UserContex = React.createContext();
 
 
 const App = () => {
@@ -10,9 +10,9 @@ const App = () => {
   return (
     <div id="main">
       
-      <UserContext.Provider value={{name:"Newton", age:3}}>
+      <UserContex.Provider value={{name:"Newton", age:3}}>
       <UserProfile />
-      </UserContext.Provider>
+      </UserContex.Provider>
 
       
     </div>
@@ -21,4 +21,4 @@ const App = () => {
 
 
 export default App;
-export {UserContext}
+
